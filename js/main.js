@@ -1,3 +1,4 @@
+// 获取文本中光标的位置
 function getCursorPosition(textarea) {
   var rangeData = {
     text: "",
@@ -14,6 +15,7 @@ function getCursorPosition(textarea) {
   return rangeData;
 }
 
+// 为文本域绑定tab键为输入4个空格
 var bindTab = function() {
   $(".editor").on('keydown', function(e) {
     if (e.keyCode == 9) {
@@ -79,8 +81,7 @@ var bindBold = function() {
   bold.click(function() {
     var textarea = document.querySelector('.editor')
     var position = getCursorPosition(textarea)
-    var converter = new showdown.Converter();
-    var value = $('.editor').val()
+s    var value = $('.editor').val()
     if (position.start === position.end) {
       var t1 = value.slice(0, position.end)
       var t2 = value.slice(position.end, position.length)
