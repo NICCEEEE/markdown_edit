@@ -3,4 +3,4 @@
 -----
 
 ### 实际效果预览!
-![editor](http://cwuc.cc/static/editorview.png)
+![editor](http://cwuc.cc/static/images/editorview.png)
